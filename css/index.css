@@ -5,18 +5,49 @@
   margin: 0;
 }
 
-main{
-  background: rgb(144,156,255);
-  background: linear-gradient(0deg, rgba(144,156,255,0.5663515406162465) 0%, rgba(63,72,159,0.6083683473389356) 25%, rgba(46,56,138,0.6896008403361344) 50%, rgba(29,39,122,0.7512254901960784) 75%, rgba(9,22,121,0.9276960784313726) 100%);
-  background-repeat: no-repeat;
+header{
+  display: grid;
+  position: relative;
+  text-align: center;
+  font-size: 25px;
 }
 
-header{
+.title{
   display: flex;
+  position: fixed;
+  left: 15%;
+  right: 0;
+  top: 0;
   justify-content: center;
-  text-align: center;
   background: radial-gradient(circle, rgba(136,149,251,0.6279761904761905) 0%, rgba(99,114,226,0.6783963585434174) 25%, rgba(59,73,180,0.6896008403361344) 50%, rgba(30,44,149,0.8884803921568627) 75%, rgba(19,31,128,1) 100%);
   color: white;
-  font-size: 25px;
-  padding: 35px 50px;
+  padding: 50px 50px;
+}
+
+.icon{
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  top: 15px;
+}
+
+.menu{
+  display: grid;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 12, 102, 100%);
+  width: 250px;
+  padding: 16px;
+}
+
+.menu-list{
+  list-style: none;
+  margin-top: 200px;
+}
+
+.list-item{
+  color: white;
+  font-size: 20px;
+  margin-bottom: 48px;
 }
