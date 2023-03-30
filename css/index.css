@@ -2,53 +2,95 @@
   font-family: 'Noto Sans KR', sans-serif;
   font-family: 'Roboto Mono', monospace;
   box-sizing: border-box;
-  margin: 0;
+}
+
+body{
+  margin: 30px 80px;
+  background-color: rgb(237, 222, 250);
 }
 
 header{
-  display: grid;
-  position: relative;
-  text-align: center;
-  font-size: 25px;
+  margin: 60px 85px 130px 85px;
+  font-size: 60px;
+  font-style: italic;
+  color: #ffa3a6;
+  line-height: 25px;
+  letter-spacing: 50px;
+}
+header #sara{
+  text-align: left;
 }
 
-.title{
-  display: flex;
-  position: fixed;
-  left: 15%;
-  right: 0;
-  top: 0;
-  justify-content: center;
-  background: radial-gradient(circle, rgba(136,149,251,0.6279761904761905) 0%, rgba(99,114,226,0.6783963585434174) 25%, rgba(59,73,180,0.6896008403361344) 50%, rgba(30,44,149,0.8884803921568627) 75%, rgba(19,31,128,1) 100%);
-  color: white;
-  padding: 50px 50px;
-}
-
-.icon{
-  width: 150px;
-  height: 150px;
-  position: fixed;
-  top: 15px;
+header #ssori{
+  text-align: right;
 }
 
 .menu{
   display: grid;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(0, 12, 102, 100%);
-  width: 250px;
-  padding: 16px;
+  justify-content: center;
+  grid-template-areas:
+  "list1 . list2"
+  ". git ."
+  "list3 . list4"
+;
+  gap: 30px 60px;
 }
 
-.menu-list{
-  list-style: none;
-  margin-top: 200px;
+#git_img{
+  grid-area: git;
+}
+
+#git_img img{
+  width: 150px;
+  height: 150px;
 }
 
 .list-item{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(6,1fr);
+  background-color: #ffa3a6;
+  border: 1px solid white;
+  border-radius: 10%;
+  width: 300px;
+  height: 200px;
+
+}
+
+#list1{
+  grid-area: list1;
+}
+
+#list2{
+
+  grid-area: list2;
+}
+
+#list3{
+  grid-area: list3;
+}
+
+#list4{
+  grid-area: list4;
+}
+
+.logo{
+  grid-column: 3/5;
+  grid-row: 2/4;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+
+.list-item h3{
+  grid-column: 2/6;
+  grid-row: 5/6;
+  text-align: center;
   color: white;
   font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 48px;
+}
+
+.onmouse{
+  width: 350px;
+  height: 250px;
 }
