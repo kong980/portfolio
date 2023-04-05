@@ -84,3 +84,8 @@ header #ssori{
   font-size: 20px;
 }
 
+.clickMouse{
+  background-color: black;
+  width: 230px;
+  height: 230px;
+}
