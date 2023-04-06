@@ -28,6 +28,8 @@ header #ssori{
 
 .menu{
   position: relative;
+  height: 800px;
+  margin-left: 50px;
 }
 
 #git_img{
@@ -84,8 +86,40 @@ header #ssori{
   font-size: 20px;
 }
 
-.clickMouse{
-  background-color: black;
+.list-item:hover,
+.clicked .list-item{
+  background-color: gray;
   width: 230px;
   height: 230px;
+}
+
+.list-item:hover .logo,
+.clicked .logo{
+  width: 90px;
+  height: 90px;
+  margin: 30px 73px;
+}
+
+.explain{
+  display: none;
+  font-weight: 800;
+  color: white;
+  background-color: gray;
+  border-radius: 30px;
+  width: 65%;
+  height: 350px;
+  padding: 15px 25px;
+  margin-bottom: 150px;
+}
+
+.explain h2{
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.clicked .explain{
+  display: inline-block;
+  position: absolute;
+  top: 300px;
+  left: 15%;
 }
