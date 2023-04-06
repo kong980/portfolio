@@ -1,18 +1,10 @@
-const list = document.querySelectorAll('.list-item');
+const list = document.querySelectorAll('.lists');
 
-list.forEach(function(item){
-  item.addEventListener("mouseenter",function(){
-    list.forEach(function(e){
-      e.classList.remove("clickMouse");
+  list.forEach(function(item){
+    item.addEventListener("click",function(){
+      list.forEach(function(e){
+        e.classList.remove("clicked");
+      });
+      item.classList.add("clicked");
     });
-    item.classList.add("clickMouse");
-  });
-})
-
-list.forEach(function(item){
-  item.addEventListener("mouseleave",function(){
-    list.forEach(function(e){
-      e.classList.remove("clickMouse");
-    });
-  });
-})
+  })
