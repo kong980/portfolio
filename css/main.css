@@ -1,0 +1,44 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  background-color: rgb(49, 49, 49);
+  color: white;
+  text-decoration: none;
+}
+
+.nav_container{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.nav_title{
+  letter-spacing: 2px;
+}
+
+.menu_lists{
+  display: flex;
+  list-style: none;
+}
+
+.menu_list{
+  padding: 0 10px;
+  align-items: center;
+}
+
+.menu_list > a{
+  padding: 0 8px;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.introduce{
+  margin: 80px auto;
+  padding: auto;
+  font-size: 130px;
+  text-align: center;
+}
