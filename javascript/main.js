@@ -13,7 +13,6 @@ let observer = new IntersectionObserver((e) => {
     });
   });
 });
-
 for(let i=0; i<div.length; i++){
   observer.observe(div[i]);
 }
